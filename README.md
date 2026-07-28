@@ -2,6 +2,13 @@
 
 Este repositório contém os scripts em PowerShell de configuração do Wireguard que utilizo no meu servidor de Wireguard doméstico.
 
+## Requisitos
+
+Para executar estes scripts é necessário ter os seguintes pacotes instalados:
+
+- [PowerShell](https://learn.microsoft.com/pt-br/powershell/scripting/install/install-powershell?view=powershell-7.6).
+- [Wireguard](https://www.wireguard.com/install/).
+
 ## Como utilizar
 
 Na pasta deste projeto, abra o PowerShell e digite os seguintes comandos:
