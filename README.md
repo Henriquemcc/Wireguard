@@ -6,8 +6,8 @@ Este repositório contém os scripts em PowerShell de configuração do Wireguar
 
 Para executar estes scripts é necessário ter os seguintes pacotes instalados:
 
-- [PowerShell](https://learn.microsoft.com/pt-br/powershell/scripting/install/install-powershell?view=powershell-7.6).
-- [Wireguard](https://www.wireguard.com/install/).
+- [PowerShell](https://learn.microsoft.com/pt-br/powershell/scripting/install/install-powershell?view=powershell-7.6)
+- [Wireguard](https://www.wireguard.com/install/)
 
 ## Como utilizar
 
