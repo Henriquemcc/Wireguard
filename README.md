@@ -173,6 +173,43 @@ fi
 sysctl -p
 ```
 
+### 11. Habilitando o Wireguard no Firewall do Servidor
+
+Para habilitar o Wireguard no firewall do servidor, primeiro é necessário saber qual o firewall está instalado no servidor. Caso o seu sistema seja o Fedora, RedHat, CentOS ou AlmaLinux, provavelmente o firewall é o Firewalld. Caso o seu sistema seja Ubuntu ou Debian, o seu firewall provavelmente é o UFW.
+
+#### Firewalld
+
+Para permitir o Wireguard pelo Firewalld, em um Terminal, execute os seguintes comandos:
+
+```shell
+sudo firewall-cmd --permanent --add-service=wireguard
+sudo firewall-cmd --reload
+```
+
+E o firewall-cmd imprimirá:
+
+```
+success
+success
+```
+
+#### UFW
+
+Para permitir o Wireguard pelo UFW, em um Terminal, execute os seguintes comandos:
+
+```shell
+sudo ufw allow 51820
+sudo ufw reload
+```
+
+E o ufw imprimirá:
+
+```
+Rules updated
+Rules updated (v6)
+Firewall reloaded
+```
+
 ### Dúvidas Frequentes
 
 #### Identificando Interface de Rede de Saída
