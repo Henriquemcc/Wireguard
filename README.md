@@ -152,6 +152,20 @@ Exemplo:
 sudo wg-quick up /etc/wireguard/meupc.conf```
 ```
 
+### 10. Habilitando o encaminhamento de pacotes IP no Servidor
+
+Para habilitar o encaminhamento de pacotes IP no servidor, no servidor, em um Terminal, como root, digite o seguinte comando:
+
+```shell
+if ! grep -q "net.ipv4.ip_forward=1" "/etc/sysctl.conf"; then
+  echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
+fi
+if ! grep -q "net.ipv6.conf.all.forwarding=1" "/etc/sysctl.conf"; then
+  echo "net.ipv6.conf.all.forwarding=1" >> /etc/sysctl.conf
+fi
+sysctl -p
+```
+
 ### Dúvidas Frequentes
 
 #### Identificando Interface de Rede de Saída
