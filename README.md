@@ -44,9 +44,9 @@ Exemplo:
 $servidoresDns = @([System.Net.IPAddress]::Parse("9.9.9.9"), [System.Net.IPAddress]::Parse("149.112.112.112"), [System.Net.IPAddress]::Parse("2620:fe::fe"), [System.Net.IPAddress]::Parse("2620:fe::9"))
 ```
 
-### 4. Adicionando Cliente
+### 4. Criando Cliente
 
-Para adicionar o primeiro cliente, digite o seguinte comando, substituindo ```<VARIÁVEL-CLIENTE>``` pelo nome da variável a armazenar o objeto cliente, ```<NOME-DO-CLIENTE>``` pelo nome que deseja adicionar ao cliente, o ```<ENDERECO-IPV4-CLIENTE>``` pelo endereço IPv4 privado desejado para o cliente, ```<MÁSCARA-ENDERECO-IPV4>``` pela máscara do endereço IPv4, ```<ENDERECO-IPV6-CLIENTE>``` pelo endereço IPv6 privado desejado para o cliente e ```<MÁSCARA-ENDERECO-IPV6>``` pela máscara do endereço IPv6:
+Para criar o primeiro cliente, digite o seguinte comando, substituindo ```<VARIÁVEL-CLIENTE>``` pelo nome da variável a armazenar o objeto cliente, ```<NOME-DO-CLIENTE>``` pelo nome que deseja adicionar ao cliente, o ```<ENDERECO-IPV4-CLIENTE>``` pelo endereço IPv4 privado desejado para o cliente, ```<MÁSCARA-ENDERECO-IPV4>``` pela máscara do endereço IPv4, ```<ENDERECO-IPV6-CLIENTE>``` pelo endereço IPv6 privado desejado para o cliente e ```<MÁSCARA-ENDERECO-IPV6>``` pela máscara do endereço IPv6:
 
 ```powershell
 $<VARIÁVEL-CLIENTE> = [Client]::new("<NOME-DO-CLIENTE>", @([IpAddressInfo]::new("<ENDERECO-IPV4-CLIENTE>", <MÁSCARA-ENDERECO-IPV4>), [IpAddressInfo]::new("<ENDERECO-IPV6-CLIENTE>", <MÁSCARA-ENDERECO-IPV6>)))
